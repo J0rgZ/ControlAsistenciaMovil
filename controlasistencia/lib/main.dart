@@ -9,7 +9,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: SedesScreen(),
       debugShowCheckedModeBanner: false,
     );
@@ -25,10 +25,10 @@ class Sede {
 }
 
 class SedesScreen extends StatelessWidget {
-  const SedesScreen({super.key});
+  SedesScreen({super.key});
 
-  final List<Sede> sedes = const [
-    Sede(
+  final List<Sede> sedes = [
+     Sede(
       nombre: 'Sede Central',
       direccion: 'Av. Siempre Viva 742',
       descripcion: 'Ubicación principal de la empresa con oficinas administrativas.',
