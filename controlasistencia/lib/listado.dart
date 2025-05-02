@@ -71,7 +71,8 @@ class _EmployeeListScreenState extends State<EmployeeListScreen> {
                     CircleAvatar(
                       radius: 30,
                       backgroundColor: Colors.indigo[300],
-                      child: const Icon(Icons.person, size: 40, color: Colors.white),
+                      child: const Icon(Icons.person,
+                          size: 40, color: Colors.white),
                     ),
                     const SizedBox(width: 16),
                     Column(
@@ -102,7 +103,7 @@ class _EmployeeListScreenState extends State<EmployeeListScreen> {
                     ElevatedButton(
                       onPressed: () => toggleEmployeeStatus(employee),
                       style: ElevatedButton.styleFrom(
-                        primary: statusColor,
+                        backgroundColor: statusColor,
                         padding: const EdgeInsets.symmetric(
                           vertical: 14,
                           horizontal: 20,
