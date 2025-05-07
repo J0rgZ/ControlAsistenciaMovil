@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
+// Datos fijos de ejemplo (en una app real esto vendría de un modelo o backend)
 class AttendanceScreen extends StatelessWidget {
   final String employeeName = 'Jorge Briceño';
   final String sede = 'Sede Central';
