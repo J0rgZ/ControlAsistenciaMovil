@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   lucide_icons: ^0.257.0
   cloud_firestore: ^5.4.4
+  firebase_storage: ^12.4.5
+  image_picker: ^0.8.7
 
 dev_dependencies:
   flutter_test:
