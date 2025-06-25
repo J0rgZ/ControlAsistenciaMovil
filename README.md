@@ -35,3 +35,21 @@ Automatiza y valida la asistencia de forma **segura**, **eficiente** y **en tiem
 ✅ Elimina errores manuales  
 ✅ Mejora la toma de decisiones  
 ✅ Optimiza el tiempo del personal
+
+---
+
+## 🛠️ Tecnologías clave
+
+- Flutter (App móvil)  
+- Firebase / API REST  
+- Reconocimiento facial + GPS
+
+---
+
+## 🧾 Base del desarrollo
+
+📋 Requerimientos levantados con el cliente  
+📍 Consideraciones del entorno de obra  
+💻 Buenas prácticas en desarrollo de software
+
+---
