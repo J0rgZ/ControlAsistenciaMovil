@@ -9,8 +9,6 @@ En contextos donde la eficiencia operativa y la transparencia en la gestión del
 - 📍 Geolocalización (GPS)
 - 🧑‍🦱 Reconocimiento facial
 
-El documento de especificación de requerimientos tiene como propósito definir de manera clara, estructurada y detallada las funcionalidades, características y restricciones que debe cumplir el sistema, sirviendo como guía para su diseño, desarrollo, pruebas y validación.
-
 La solución consiste en una **aplicación móvil multiplataforma** complementada por un **sistema web administrativo**, que permita registrar la asistencia de los trabajadores de forma automatizada, segura y eficiente.
 
 ---
