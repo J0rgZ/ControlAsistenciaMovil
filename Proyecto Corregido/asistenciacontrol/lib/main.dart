@@ -1,13 +1,20 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+// Paquetes de Dart
+import 'dart:io';
+
+// Paquetes de Flutter
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+// Paquetes externos
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
+
+// Archivos locales
 import 'firebase_options.dart';
 import 'admin_login.dart';
 
