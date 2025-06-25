@@ -69,5 +69,18 @@ class Empleado {
     bool? activo,
     DateTime? fechaCreacion,
     DateTime? fechaModificacion,
-  }) 
+  }) {
+    return Empleado(
+      id: id ?? this.id,
+      nombre: nombre ?? this.nombre,
+      apellidos: apellidos ?? this.apellidos,
+      correo: correo ?? this.correo,
+      cargo: cargo ?? this.cargo,
+      sedeId: sedeId ?? this.sedeId,
+      hayDatosBiometricos: hayDatosBiometricos ?? this.hayDatosBiometricos,
+      activo: activo ?? this.activo,
+      fechaCreacion: fechaCreacion ?? this.fechaCreacion,
+      fechaModificacion: fechaModificacion ?? DateTime.now(),
+    );
+  }
 }
