@@ -1,66 +1,93 @@
-# 📲 Control de Asistencia Móvil  
-_Móviles II - Proyecto Académico_
+# 📲 Sistema de Control de Asistencia Móvil
 
 ---
 
-## 🚀 ¿Qué es este proyecto?
+## 📘 Introducción
 
-Un sistema inteligente de **control de asistencia** para trabajadores en obra, que utiliza:
+En contextos donde la eficiencia operativa y la transparencia en la gestión del personal son factores críticos, el uso de herramientas digitales se vuelve una necesidad. Este sistema propone modernizar los procesos de control de asistencia mediante tecnologías como:
 
-- 📍 **Geolocalización**  
-- 🧑‍🦱 **Reconocimiento facial**
+- 📍 Geolocalización (GPS)
+- 🧑‍🦱 Reconocimiento facial
 
-Automatiza y valida la asistencia de forma **segura**, **eficiente** y **en tiempo real**.
+El documento de especificación de requerimientos tiene como propósito definir de manera clara, estructurada y detallada las funcionalidades, características y restricciones que debe cumplir el sistema, sirviendo como guía para su diseño, desarrollo, pruebas y validación.
 
----
-
-## 🏗️ ¿Para quién se desarrolla?
-
-**Arod Contratistas Generales S.R.L.**, una empresa que busca modernizar la gestión de su personal en campo.
+La solución consiste en una **aplicación móvil multiplataforma** complementada por un **sistema web administrativo**, que permita registrar la asistencia de los trabajadores de forma automatizada, segura y eficiente.
 
 ---
 
-## 📱 ¿Qué incluye la solución?
+## ❗ Descripción del Problema
 
-- Una **app móvil multiplataforma**  
-- Un **sistema web administrativo**
+Las organizaciones con personal distribuido en múltiples sedes enfrentan serias dificultades al controlar la asistencia:
 
-👉 Permiten **registrar, validar y consultar** asistencias desde cualquier lugar.
+- Uso de registros manuales propensos a errores
+- Posible suplantación de identidad
+- Marcaciones fuera de horario o ubicación
+- Falta de consolidación oportuna de estadísticas
 
----
-
-## 🧠 ¿Por qué es importante?
-
-✅ Evita suplantaciones  
-✅ Elimina errores manuales  
-✅ Mejora la toma de decisiones  
-✅ Optimiza el tiempo del personal
+Estas fallas impactan negativamente en la productividad, la transparencia y la toma de decisiones.
 
 ---
 
-## 🛠️ Tecnologías clave
+## 🎯 Objetivos del Sistema
 
-- Flutter (App móvil)  
-- Firebase / API REST  
-- Reconocimiento facial + GPS
+### 🎯 Objetivos de Negocio
+
+- **Eliminar suplantación de identidad** mediante reconocimiento facial
+- **Controlar ubicación de marcación** utilizando GPS y zonas permitidas
+- **Optimizar generación de reportes** de asistencia de forma automatizada
+- **Modernizar la gestión de asistencia** con validaciones biométricas y geográficas
+
+### 🧩 Objetivos de Diseño
+
+- **Validación biométrica y geográfica**: reconocimiento facial y GPS
+- **Dashboard administrativo**: interfaz clara, con datos en tiempo real
+- **UX simplificada**: proceso de marcación intuitivo y rápido
+- **Gestión de sedes y personal**: asignación, control de acceso y mapas
+- **Reportes exportables**: en formatos como Excel o PDF
+- **Protección de datos personales**: cifrado y cumplimiento normativo
+
+---
+
+## 📦 Alcance del Proyecto
+
+Este sistema incluye:
+
+- Registro de empleados con datos personales y biométricos
+- Marcación de entrada y salida con reconocimiento facial y GPS
+- Restricción de marcación a zonas geográficas autorizadas
+- Visualización de sedes en mapa y gestión de ubicaciones
+- Asignación de empleados a sedes específicas
+- Activación/desactivación de empleados según su estado laboral
+- Historial detallado de asistencias con confirmación de ubicación
+- Exportación de reportes (CSV, Excel)
+- Dashboard con indicadores de asistencia y estadísticas por sede
+- Confirmación visual inmediata para usuarios al marcar asistencia
+- Acceso seguro, restringido solo a usuarios administradores
 
 ---
 
-## 🧾 Base del desarrollo
+## 🔍 Viabilidad del Sistema
 
-📋 Requerimientos levantados con el cliente  
-📍 Consideraciones del entorno de obra  
-💻 Buenas prácticas en desarrollo de software
+### ✅ Viabilidad Técnica
+
+- Uso de tecnologías modernas y soportadas:
+  - **Flutter** para aplicación móvil (multiplataforma)
+  - **ASP.NET** para panel administrativo web
+- Garantiza escalabilidad, mantenimiento y compatibilidad
+
+### 💰 Viabilidad Económica
+
+- Reducción de costos operativos
+- Eliminación de procesos manuales y errores humanos
+- Alto **retorno de inversión (ROI)** por optimización de recursos
+
+### ⚙️ Viabilidad Operativa
+
+- El sistema está diseñado para adaptarse a estructuras organizativas dinámicas y rotativas
+- Interfaz sencilla, accesible desde diferentes dispositivos y sedes
+- Facilita el control y seguimiento del personal distribuido
 
 ---
-## 🏢 Sobre la empresa desarrolladora
 
-### 🏷️ Nombre: **Caeltek**
+> _“La asistencia digital ya no es una opción: es una necesidad estratégica para gestionar talento humano de forma segura y eficiente.”_
 
-### 🌟 Visión  
-Ser la empresa tecnológica líder en Tacna, reconocida por impulsar la innovación digital en la región sur del Perú.
-
-### 🎯 Misión  
-Desarrollar soluciones tecnológicas eficientes, accesibles y a la medida, contribuyendo al crecimiento regional mediante el uso inteligente de la tecnología.
-
----
