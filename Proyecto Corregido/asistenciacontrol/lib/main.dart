@@ -29,9 +29,9 @@ class AttendanceApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6366F1), // Indigo
-          secondary: const Color(0xFF8B5CF6), // Violet
-          tertiary: const Color(0xFFEC4899), // Pink
+          seedColor: const Color(0xFF6366F1),
+          secondary: const Color(0xFF8B5CF6),
+          tertiary: const Color(0xFFEC4899),
           brightness: Brightness.light,
         ),
         useMaterial3: true,
@@ -213,7 +213,7 @@ class AttendanceApp extends StatelessWidget {
             context, 
             MaterialPageRoute(builder: (context) => const AttendancePage())
           ),
-          context: context, // Añadido aquí
+          context: context,
         ).animate().fadeIn(duration: 500.ms).slideY(begin: 0.2, end: 0),
         const SizedBox(height: 16),
         _buildOptionCard(
@@ -225,7 +225,7 @@ class AttendanceApp extends StatelessWidget {
             context, 
             MaterialPageRoute(builder: (context) => const AdminLoginPage())
           ),
-          context: context, // Añadido aquí
+          context: context,
         ).animate().fadeIn(duration: 500.ms).slideY(
           begin: 0.2, 
           end: 0, 
@@ -375,10 +375,10 @@ class _AttendancePageState extends State<AttendancePage> with TickerProviderStat
   String _lastAction = '';
   String _message = 'Verificando ubicación...';
   
-  // Coordenadas del lugar permitido (ejemplo)
+  
   final double _targetLatitude = -17.997823835873643; 
   final double _targetLongitude = -70.23955157259915;
-  final double _allowedDistance = 100; // Distancia permitida en metros
+  final double _allowedDistance = 100; 
   
   late AnimationController _pulseController;
   late AnimationController _checkInController;
@@ -399,9 +399,9 @@ class _AttendancePageState extends State<AttendancePage> with TickerProviderStat
       duration: const Duration(seconds: 1),
     );
     
-    // Agregar listener al campo de DNI
+    
     _dniController.addListener(() {
-      if (_dniController.text.length >= 8) { // DNI peruano típico tiene 8 dígitos
+      if (_dniController.text.length >= 8) {
         _checkAttendanceStatus(_dniController.text);
       }
     });
@@ -433,12 +433,12 @@ class _AttendancePageState extends State<AttendancePage> with TickerProviderStat
         Map<String, dynamic> data = attendanceSnapshot.docs.first.data() as Map<String, dynamic>;
         
         setState(() {
-          // Si hay checkIn pero no checkOut, entonces ha marcado entrada pero no salida
+          
           if (data['checkIn'] != null && data['checkOut'] == null) {
             _hasCheckedIn = true;
             _lastAction = 'Entrada registrada a las ${data['checkIn']['time']}';
           } 
-          // Si tiene ambos, ya completó su ciclo de asistencia
+          
           else if (data['checkIn'] != null && data['checkOut'] != null) {
             _hasCheckedIn = true;
             _lastAction = 'Salida registrada a las ${data['checkOut']['time']}';
@@ -534,7 +534,7 @@ class _AttendancePageState extends State<AttendancePage> with TickerProviderStat
     final ImagePicker picker = ImagePicker();
     try {
       final XFile? photo = await picker.pickImage(
-        source: ImageSource.camera, // Solo permite cámara, no galería
+        source: ImageSource.camera,
         preferredCameraDevice: CameraDevice.front,
         imageQuality: 80,
       );
@@ -544,7 +544,7 @@ class _AttendancePageState extends State<AttendancePage> with TickerProviderStat
           _imageFile = File(photo.path);
         });
         
-        // Animación de éxito al tomar la foto
+        
         _checkInController.reset();
         _checkInController.forward();
       }
@@ -560,7 +560,7 @@ class _AttendancePageState extends State<AttendancePage> with TickerProviderStat
 
   Future<bool> _canMarkAttendance(String dni, bool isCheckIn) async {
     try {
-      // Check if employee exists
+      
       QuerySnapshot employeeSnapshot = await _firestore
           .collection('employees')
           .where('dni', isEqualTo: dni)
