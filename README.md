@@ -53,3 +53,14 @@ Automatiza y valida la asistencia de forma **segura**, **eficiente** y **en tiem
 💻 Buenas prácticas en desarrollo de software
 
 ---
+## 🏢 Sobre la empresa desarrolladora
+
+### 🏷️ Nombre: **Caeltek**
+
+### 🌟 Visión  
+Ser la empresa tecnológica líder en Tacna, reconocida por impulsar la innovación digital en la región sur del Perú.
+
+### 🎯 Misión  
+Desarrollar soluciones tecnológicas eficientes, accesibles y a la medida, contribuyendo al crecimiento regional mediante el uso inteligente de la tecnología.
+
+---
