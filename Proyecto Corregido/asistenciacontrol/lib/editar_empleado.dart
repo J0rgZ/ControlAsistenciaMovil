@@ -33,7 +33,7 @@ class _EditarEmpleadoPageState extends State<EditarEmpleadoPage> {
   @override
   void initState() {
     super.initState();
-    // Initialize controllers with existing employee data
+    
     _dniController = TextEditingController(text: widget.employee.dni);
     _nameController = TextEditingController(text: widget.employee.name);
     _lastNameController = TextEditingController(text: widget.employee.lastName);
@@ -44,7 +44,7 @@ class _EditarEmpleadoPageState extends State<EditarEmpleadoPage> {
 
   @override
   void dispose() {
-    // Dispose controllers to prevent memory leaks
+    
     _dniController.dispose();
     _nameController.dispose();
     _lastNameController.dispose();
@@ -56,7 +56,7 @@ class _EditarEmpleadoPageState extends State<EditarEmpleadoPage> {
     if (!_formKey.currentState!.validate()) return;
 
     try {
-      // Create an updated employee object
+      
       Employee updatedEmployee = Employee(
         id: widget.employee.id,
         dni: _dniController.text,
@@ -70,10 +70,10 @@ class _EditarEmpleadoPageState extends State<EditarEmpleadoPage> {
         faceRecognitionTemplate: widget.employee.faceRecognitionTemplate,
       );
 
-      // Update the employee in Firestore
+      
       await _employeesRef.doc(widget.employee.id).update(updatedEmployee.toJson());
       
-      // Navigate back with success
+      
       Navigator.pop(context, true);
     } catch (e) {
       _showErrorDialog('Error', 'No se pudo actualizar el empleado: $e');
